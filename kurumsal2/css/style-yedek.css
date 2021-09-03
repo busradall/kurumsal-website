@@ -1,0 +1,84 @@
+/* GENERAL STYLING */
+html { scroll-behavior: smooth; }
+*::-webkit-scrollbar { width: 3px; background-color: #eee; } 
+*::-webkit-scrollbar-track { background-color: #ccc; width:1px; border:1px solid #fff; }
+*::-webkit-scrollbar-button { display: none; }
+*::-webkit-scrollbar-thumb { background-color: #000; }
+h3 {font-size: 13px;font-weight: 400;}
+h2 {font-size: 32px;font-weight: 400;color: #1886C7;text-transform: uppercase;}
+p {	font-size: 14px;}
+.btnScrollUp {cursor: pointer;position: fixed;right: 20px;bottom: 10px;width: 40px;height: 40px;
+	background: url(../img/btnYukariGit.png) no-repeat center center;background-size: contain; }
+
+/* NAVBAR */
+.navbar { border-bottom: #1886C7 4px solid;}
+.navbar .navbar-brand {	color: #1886C7;	font-size: 24px; }
+.bg-dark { background-color: rgba(0,0,0,1) !important; }
+.nav-link {text-transform: uppercase;transition: color .5s ease !important;}
+.nav-link:hover { color: #1886C7 !important; }
+
+/* HEADER SECTİON */
+#header { background: url('../img/bg-header.jpg') no-repeat center center fixed;
+	background-size: cover;	height: 100vh;}
+#header .overlay {	background-color: rgba(0,0,0,.7);}
+#header .row {height: 100vh;}
+#header span {	color: #1886C7 !important;}
+ 
+/* FEATURES SECTİON */
+#features .fab, .fas { font-size: 40px; }
+.feature-top { color: #1886C7;	transition: color .5s ease !important; }
+.feature-top:hover { color: #000; cursor: pointer; }
+
+/* HISTORY SECTION */
+#ourHistory h2 { border-left: 6px solid #1886C7; padding-left: 30px; }
+#ourHistory .col-md-6 { display: inline;}
+#ourHistory p { text-align: justify; line-height: 25px; }
+
+/* TEAM SECTION */
+#team .card {border:none; cursor: pointer; 	}
+#team .col-md-3:hover { opacity: 0.8; transition: all 0.5s ease; }
+#team .fab { font-size: 24px;}
+
+/* WHAT WE DO SECTION */
+#whatWeDo {
+	background: linear-gradient(
+		rgba(0,0,0, .7), 
+		rgba(0,0,0, .7)
+	), /* birinci ve 2. değer aynı verdik. black 70% opacity */
+	url(../img/bg-code.jpg) fixed center center no-repeat;
+	background-size: cover;
+}
+
+/* caseStudy */
+#caseStudy { background-color: #f4f5f9; line-height: 30px; }
+#caseStudy .caseArea { background-color: #fff;	margin-top: 40px;margin-right: -50px;padding: 40px;
+	z-index: 100;position: relative; /* z-index çalışması için*/min-height: 420px; }
+#caseStudy h3 {	font-size: 18px;margin-top: 30px;margin-bottom: 30px;color: #1886C7;text-transform: uppercase;}
+#caseStudy .fa {font-size: 40px;margin-top: 30px;margin-bottom: 10px;color: #1886C7;} 
+#caseStudy .btn { 	margin-top: 15px; } 
+
+/* portfolio section */
+#portfolio { background-color: #f4f4f4; }
+#portfolio .h4 {font-size: 16px;font-weight: 300;}
+#portfolio .fa {font-size: 24px;margin-bottom: 20px;}
+#portfolio .p {	font-size: 12px;font-weight: 300;}
+.imageContainer {position: relative;cursor: pointer;}
+.imageOverlay {	position: absolute;	top: 0;	bottom: 0;left: 0;right: 0;	height: 100%;width: 100%;background-color: #1886c7; 
+	opacity: 0;	transition: 1s ease;}
+.imageContainer:hover .imageOverlay {opacity: .7;}
+.imageText { position: absolute;top: 50%;left: 50%;	transform: translate(-50%, -50%); /* texti otomatik ortalaması için */}
+
+/* Contact Section*/
+#contact { background-color: #f4f4f4; }
+#contact h4 { font-size: 20px;font-weight: 500;color: #1886C7;}
+#contact .input-group-prepend span { width: 50px; background-color: #1886c7; }
+
+/* RESPONSIVE */
+@media screen and (max-width: 992px) {
+	.display-3 { font-size: 35px !important }
+	#caseStudy .caseArea { margin-right: 0px;  }
+	#caseStudy .caseImage { display: none; } 
+	#contact { text-align: center; }
+}
+
+ 
